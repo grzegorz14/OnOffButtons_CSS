@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Button switch</title>
+    <link rel="stylesheet" href="styles/switchStyle.css">
+    <link rel="stylesheet" href="styles/buttonStyle.css">
+    <link rel="stylesheet" href="styles/lightStyle.css">
+</head>
+<body>
+    <div class="whiteCircleBorder">
+        <div class="grayCircleBorder">
+            <div class="buttonGradient clicked" onclick="OnOff()" id="clickedButton">
+                <div class="recessGradient">
+                    <div class="onSymbolRectancle green" id="onSymbolRectancle"></div>  
+                    <div class="onSymbolInsideUp"></div> 
+                    <div class="onSymbolCircle green" id="onSymbolCircle"></div>
+                    <div class="onSymbolInside"></div>     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gradientLightBorder">
+        <div class="gradientLightCircle">
+            <div class="lightOn" id="lightOn">
+                <div class="centerLightOn" id="centerLightOn"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="border">
+        <div id="ONOFF" class="przycisk">
+            <div class="buttonRight buttonMovesRight" id="movingButton" onclick="OnOff()">
+                <div class="recess"></div>
+            </div>
+            <div class="ON">ON</div>
+            <div class="OFF">OFF</div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
